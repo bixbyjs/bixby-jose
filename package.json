@@ -1,0 +1,50 @@
+{
+  "name": "bixby-jose",
+  "version": "0.0.0",
+  "description": "JavaScript Object Signing and Encryption (JOSE) components for Bixby.js.",
+  "keywords": [
+    "jose"
+  ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "https://www.jaredhanson.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bixbyjs/bixby-jose.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bixbyjs/bixby-jose/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/jaredhanson"
+  },
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  ],
+  "assembly": {
+    "namespace": "jose",
+    "components": [
+      "jwt/main"
+    ]
+  },
+  "directories": {
+    "com": "com"
+  },
+  "dependencies": {
+    "jose": "^4.3.7"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "*"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  }
+}
