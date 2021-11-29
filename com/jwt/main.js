@@ -13,6 +13,16 @@ exports = module.exports = function() {
         .catch(function(error) {
           return cb(error);
         });
+    },
+    
+    verify: function(token, key, cb) {
+      return jose.jwtVerify(token, key)
+        .then(function(jwt) {
+          return cb(null, jwt.payload);
+        })
+        .catch(function(error) {
+          return cb(error);
+        });
     }
     
   };
