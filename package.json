@@ -1,6 +1,6 @@
 {
   "name": "bixby-jose",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JavaScript Object Signing and Encryption (JOSE) components for Bixby.js.",
   "keywords": [
     "jose"
