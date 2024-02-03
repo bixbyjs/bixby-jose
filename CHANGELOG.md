@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2024-02-02
+### Added
+- Added `kid` header parameter to JWT.
+
 ## [0.1.1] - 2021-11-29
 ### Added
 - Added `jwt.verify()` function.

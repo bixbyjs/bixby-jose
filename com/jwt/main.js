@@ -4,8 +4,14 @@ exports = module.exports = function() {
   return {
     
     sign: function(claims, key, cb) {
+      // TODO: allow header params to be passed in
+      
+      var head = {};
+      head.alg = 'RS256';
+      if (key.id) { head.kid = key.id; }
+      
       return new jose.SignJWT(claims)
-        .setProtectedHeader({ alg: 'RS256' })
+        .setProtectedHeader(head)
         .sign(key)
         .then(function(jwt) {
           return cb(null, jwt);
